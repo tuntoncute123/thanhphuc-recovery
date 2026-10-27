@@ -340,18 +340,17 @@ export const Navbar: React.FC<NavbarProps> = ({
               </span>
             </div>
 
-            <Button
-              type="primary"
-              block
-              size="large"
-              onClick={() => {
-                setMobileMenuOpen(false);
-                onOpenConsultation('Yêu cầu cứu dữ liệu khẩn cấp');
-              }}
-              className="rounded-xl font-bold bg-sky-600 hover:bg-sky-700 h-11 border-0"
+            <a
+              href={COMPANY_INFO.social.zalo}
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full flex items-center justify-center space-x-2 rounded-xl font-bold bg-sky-600 hover:bg-sky-700 text-white h-11 border-0 shadow-sm"
+              title="Nhắn tin Zalo Thành Phúc Recover"
             >
-              Yêu Cầu Cứu Dữ Liệu Ngay
-            </Button>
+              <span>Nhắn Tin Zalo.me Ngay</span>
+              <ExternalLink className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </Drawer>

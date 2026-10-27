@@ -224,12 +224,16 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo, onOpenConsultation }
               </div>
             </div>
 
-            <button
-              onClick={onOpenConsultation}
-              className="mt-3 w-full py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs transition-colors flex items-center justify-center space-x-2 cursor-pointer"
+            <a
+              href={COMPANY_INFO.social.zalo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-3 w-full py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-bold text-xs transition-colors flex items-center justify-center space-x-2 cursor-pointer shadow-sm"
+              title="Nhắn tin Zalo trực tiếp tới Thành Phúc Recover: 0935.473.890"
             >
-              <span>Nhắn Tin Cứu Dữ Liệu Ngay</span>
-            </button>
+              <ExternalLink className="w-3.5 h-3.5" />
+              <span>Nhắn Tin Cứu Dữ Liệu Ngay (Zalo.me)</span>
+            </a>
           </div>
 
         </div>

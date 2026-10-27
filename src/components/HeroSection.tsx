@@ -130,8 +130,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             {/* Action Buttons */}
             <div className="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3 sm:gap-4">
               <a
-                href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`}
+                href={COMPANY_INFO.social.zalo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="rounded-xl font-bold bg-sky-600 hover:bg-sky-700 text-white h-12.5 px-6 shadow-md shadow-sky-500/25 flex items-center space-x-2 text-sm sm:text-base border-0 transition-all hover:scale-102 cursor-pointer"
+                title="Nhắn Zalo.me hoặc gọi Hotline: 0935.473.890"
               >
                 <Activity className="w-4 h-4 text-sky-100 animate-pulse" />
                 <span>Gọi Cứu Dữ Liệu: {COMPANY_INFO.hotlineDisplay}</span>
