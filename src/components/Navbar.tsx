@@ -179,18 +179,20 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             {/* Right Action Buttons */}
             <div className="hidden lg:flex items-center space-x-2 xl:space-x-3 shrink-0">
-              {/* Hotline for Large Screens (Full 2-line badge, strictly nowrap) */}
+              {/* Hotline / Zalo for Large Screens -> Directly to zalo.me */}
               <a
-                href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`}
+                href={COMPANY_INFO.social.zalo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="hidden xl:flex items-center space-x-2 px-3 py-1.5 rounded-xl bg-sky-50/80 hover:bg-sky-100 border border-sky-200 text-slate-800 transition-colors whitespace-nowrap shrink-0 group"
-                title="Gọi Hotline hoặc chat Zalo 24/7"
+                title="Mở Zalo.me chat và liên hệ 24/7"
               >
                 <div className="w-8 h-8 rounded-lg bg-sky-600 flex items-center justify-center text-white shadow-2xs shrink-0 group-hover:scale-105 transition-transform">
                   <Phone className="w-4 h-4 shrink-0" />
                 </div>
                 <div className="text-left leading-tight whitespace-nowrap">
                   <span className="text-[10px] uppercase font-bold text-slate-500 block whitespace-nowrap">
-                    Hotline 24/7 • Zalo
+                    Zalo.me • Hotline 24/7
                   </span>
                   <span className="font-black text-sky-700 text-sm tracking-tight whitespace-nowrap">
                     {COMPANY_INFO.hotlineDisplay}
@@ -198,11 +200,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </div>
               </a>
 
-              {/* Hotline for Medium Desktop (1024px - 1279px) sleek single-row pill */}
+              {/* Hotline / Zalo for Medium Desktop (1024px - 1279px) sleek single-row pill -> zalo.me */}
               <a
-                href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`}
+                href={COMPANY_INFO.social.zalo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex xl:hidden items-center space-x-1.5 px-2.5 py-2 rounded-xl bg-sky-50/90 hover:bg-sky-100 border border-sky-200 text-sky-800 font-bold text-xs whitespace-nowrap shrink-0"
-                title="Gọi Hotline hoặc chat Zalo 24/7"
+                title="Mở Zalo.me 0935.473.890"
               >
                 <Phone className="w-3.5 h-3.5 text-sky-600 shrink-0" />
                 <span className="whitespace-nowrap">{COMPANY_INFO.hotlineDisplay}</span>
@@ -222,8 +226,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Mobile Menu Hamburger Button */}
             <div className="flex lg:hidden items-center space-x-2">
               <a
-                href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`}
+                href={COMPANY_INFO.social.zalo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-sky-600 text-white text-xs font-bold whitespace-nowrap shrink-0"
+                title="Mở Zalo.me 0935.473.890"
               >
                 <Phone className="w-3.5 h-3.5 shrink-0" />
                 <span className="whitespace-nowrap">{COMPANY_INFO.hotlineDisplay}</span>
@@ -315,16 +322,21 @@ export const Navbar: React.FC<NavbarProps> = ({
           </div>
 
           <div className="pt-4 border-t border-slate-100 space-y-3">
-            <div className="p-3.5 bg-sky-50 rounded-2xl space-y-1.5 border border-sky-100">
+            <div className="p-3.5 bg-sky-50 rounded-2xl space-y-2 border border-sky-100">
               <div className="flex items-center space-x-2">
                 <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
-                <span className="text-xs font-bold text-sky-900 block">Hotline Trực Tiếp / Zalo 24/7:</span>
+                <span className="text-xs font-bold text-sky-900 block">Zalo Me / Hotline 24/7:</span>
               </div>
-              <a href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`} className="text-lg font-black text-sky-600 block">
+              <a 
+                href={COMPANY_INFO.social.zalo} 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-lg font-black text-sky-600 block hover:underline"
+              >
                 {COMPANY_INFO.hotlineDisplay}
               </a>
               <span className="text-xs text-slate-500 block leading-tight">
-                Hỗ trợ Online toàn quốc &amp; Trực tiếp tại TP.HCM
+                Mở chat Zalo.me trực tiếp hoặc gọi 24/7 toàn quốc
               </span>
             </div>
 

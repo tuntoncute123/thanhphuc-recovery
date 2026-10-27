@@ -83,15 +83,17 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
           </span>
         </button>
 
-        {/* Emergency Call Button with Pulse Glow */}
+        {/* Emergency Call / Zalo Button with Pulse Glow */}
         <a
-          href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`}
+          href={COMPANY_INFO.social.zalo}
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-12 h-12 rounded-full bg-sky-600 hover:bg-sky-700 text-white flex items-center justify-center shadow-lg shadow-sky-500/35 transition-transform hover:scale-110 cursor-pointer group relative animate-pulse"
-          aria-label="Hotline cấp cứu"
+          aria-label="Hotline Zalo cấp cứu"
         >
           <Phone className="w-5 h-5" />
           <span className="absolute right-14 bg-sky-600 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md pointer-events-none">
-            Gọi Anh Phúc: 0935.473.890
+            Zalo.me: 0935.473.890
           </span>
         </a>
 
@@ -110,11 +112,13 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
       {/* Mobile Fixed Bottom CTA Bar */}
       <div className="fixed bottom-0 left-0 right-0 z-50 sm:hidden bg-white/95 backdrop-blur-md border-t border-sky-100 px-3 py-2 flex items-center justify-between gap-2 shadow-2xl">
         <a
-          href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`}
+          href={COMPANY_INFO.social.zalo}
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex-1 flex items-center justify-center space-x-1.5 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold"
         >
           <Phone className="w-4 h-4 text-sky-400" />
-          <span>Gọi: {COMPANY_INFO.hotlineDisplay}</span>
+          <span>Hotline: {COMPANY_INFO.hotlineDisplay}</span>
         </a>
 
         <a

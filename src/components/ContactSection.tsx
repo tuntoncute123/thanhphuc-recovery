@@ -102,22 +102,36 @@ export const ContactSection: React.FC = () => {
             </div>
 
             {/* Hotline Call Box */}
-            <div className="p-5 rounded-2xl bg-gradient-to-r from-sky-600 to-cyan-600 text-white shadow-xl shadow-sky-500/20 space-y-2">
+            <div className="p-5 rounded-2xl bg-gradient-to-r from-sky-600 to-cyan-600 text-white shadow-xl shadow-sky-500/20 space-y-3">
               <div className="flex items-center justify-between text-xs font-bold text-sky-100 uppercase tracking-wider">
-                <span>Hotline 24/7 &amp; Zalo Trực Tiếp</span>
+                <span>Zalo.me &amp; Hotline Trực Tiếp 24/7</span>
                 <span className="px-2 py-0.5 rounded-full bg-white/20 text-white font-mono text-[11px]">
                   Cứu Gấp Trong Đêm
                 </span>
               </div>
               <a
-                href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`}
+                href={COMPANY_INFO.social.zalo}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-2xl sm:text-3xl font-black text-white block hover:underline tracking-tight"
+                title="Mở Zalo.me chat trực tiếp: 0935.473.890"
               >
                 {COMPANY_INFO.hotlineDisplay}
               </a>
-              <p className="text-xs text-sky-100 font-medium">
-                Anh Phúc trực tiếp nghe máy và kiểm tra cho bạn.
-              </p>
+              <div className="flex items-center justify-between pt-1 text-xs">
+                <span className="text-sky-100 font-medium">
+                  Anh Phúc trực tiếp hỗ trợ 24/7.
+                </span>
+                <a
+                  href={COMPANY_INFO.social.zalo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-1 px-3 py-1 rounded-lg bg-white text-sky-700 font-bold hover:bg-sky-50 transition-colors shadow-2xs"
+                >
+                  <span>Mở Zalo.me</span>
+                  <ExternalLink className="w-3 h-3 ml-0.5" />
+                </a>
+              </div>
             </div>
 
             {/* Verified Channels Box */}
@@ -125,6 +139,25 @@ export const ContactSection: React.FC = () => {
               <span className="text-xs font-bold text-slate-400 uppercase tracking-wider block">
                 Kênh liên hệ chính chủ đã xác minh:
               </span>
+
+              {/* Zalo Me Official */}
+              <a
+                href={COMPANY_INFO.social.zalo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-between p-3.5 rounded-2xl bg-blue-50/80 border border-blue-200 text-blue-950 hover:bg-blue-100 transition-all shadow-2xs group"
+              >
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 rounded-full bg-[#0068FF] text-white flex items-center justify-center font-bold text-xs">
+                    Z
+                  </div>
+                  <div>
+                    <span className="text-xs font-bold block">Zalo Me Chính Chủ (Nhắn Tin Ngay):</span>
+                    <span className="text-xs text-blue-700 font-medium">zalo.me/0935473890</span>
+                  </div>
+                </div>
+                <ExternalLink className="w-4 h-4 text-blue-500 group-hover:translate-x-0.5 transition-transform" />
+              </a>
 
               <a
                 href={COMPANY_INFO.social.facebookPersonal}

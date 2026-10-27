@@ -159,8 +159,26 @@ export const Footer: React.FC<FooterProps> = ({ onScrollTo, onOpenConsultation }
             <div className="space-y-2 text-xs text-slate-400">
               <div className="flex items-center space-x-2">
                 <Phone className="w-4 h-4 text-sky-400 flex-shrink-0" />
-                <a href={`tel:${COMPANY_INFO.hotline.replace(/\./g, '')}`} className="font-bold text-sky-400 hover:underline text-sm">
-                  {COMPANY_INFO.hotlineDisplay}
+                <a 
+                  href={COMPANY_INFO.social.zalo} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="font-bold text-sky-400 hover:underline text-sm"
+                  title="Mở Zalo.me 0935.473.890"
+                >
+                  {COMPANY_INFO.hotlineDisplay} (Zalo.me 24/7)
+                </a>
+              </div>
+
+              <div>
+                <a 
+                  href={COMPANY_INFO.social.zalo} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-blue-400 flex items-center space-x-1"
+                >
+                  <span>💬 Chat Zalo: zalo.me/0935473890</span>
+                  <ExternalLink className="w-3 h-3 text-slate-500" />
                 </a>
               </div>
 
