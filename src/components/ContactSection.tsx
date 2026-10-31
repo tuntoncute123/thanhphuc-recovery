@@ -298,7 +298,7 @@ export const ContactSection: React.FC = () => {
                     rules={[{ required: true, message: 'Vui lòng chọn loại thiết bị' }]}
                   >
                     <Select className="h-11 rounded-xl text-sm">
-                      <Option value="Thẻ nhớ máy ảnh SD/CF">Thẻ nhớ máy ảnh (SD, MicroSD, CF, CFexpress) 📸</Option>
+                      <Option value="Thẻ nhớ máy ảnh SD/CF">Thẻ nhớ máy ảnh (SD, MicroSD, CF, CFexpress)</Option>
                       <Option value="Ổ cứng HDD">Ổ cứng máy tính / Ổ di động HDD</Option>
                       <Option value="Ổ cứng SSD">Ổ cứng SSD thể rắn / M.2 NVMe</Option>
                       <Option value="USB Flash">USB Flash / Thẻ nhớ nhỏ</Option>

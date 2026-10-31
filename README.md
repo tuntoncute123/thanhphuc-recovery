@@ -11,9 +11,9 @@ Dự án Landing Page chính thức cho **Thành Phúc Data Recovery** - Dịch 
 - **Địa bàn**: Thành phố Hồ Chí Minh (Ho Chi Minh City)
 - **Phạm vi phục vụ**: 🌏 Hỗ trợ Online từ xa qua UltraViewer toàn quốc & Tiếp nhận trực tiếp tại TP.HCM
 - **Dịch vụ Meta**: Đã xác minh (Tích xanh uy tín)
-- **Hệ sinh thái mạng xã hội**: 
+- **Hệ sinh thái mạng xã hội**:
   - 📸 Fanpage: [www.facebook.com/Khoiphucdulieuthenho/](https://www.facebook.com/Khoiphucdulieuthenho/) (26K Người theo dõi • Tích xanh Meta)
-  - 🔴 Facebook cá nhân: [www.facebook.com/ThanhphucRecover](https://www.facebook.com/ThanhphucRecover) (20K Người theo dõi)
+  - 🔴 Facebook cá nhân: [www.facebook.com/ThanhphucRecover](https://www.facebook.com/Khoiphucdulieuthenho) (20K Người theo dõi)
   - 👥 Admin Group KPDL: [www.facebook.com/groups/khoiphucdulieuthe/](https://www.facebook.com/groups/khoiphucdulieuthe/) (47.3K Thành viên)
 
 ---
@@ -39,8 +39,8 @@ Dự án Landing Page chính thức cho **Thành Phúc Data Recovery** - Dịch 
    - Hotline gọi nhanh 0935.473.890.
    - Menu điều hướng mượt mà và Mobile Drawer cho thiết bị di động.
 2. **Hero Section (Khu vực mở đầu)**:
-   - Thông điệp định vị: *"Khôi Phục Dữ Liệu Thẻ Nhớ • Ổ Cứng • USB & Drive Uy Tín"*.
-   - Khắc sâu trọng tâm chuyên môn: Xóa nhầm, lỗi thẻ đòi format (RAW), phục hồi file ảnh và video bị ghi đè 📸🎦🔄.
+   - Thông điệp định vị: _"Khôi Phục Dữ Liệu Thẻ Nhớ • Ổ Cứng • USB & Drive Uy Tín"_.
+   - Khắc sâu trọng tâm chuyên môn: Xóa nhầm, lỗi thẻ đòi format (RAW), phục hồi file ảnh và video bị ghi đè.
    - Bộ đếm GSAP Counter: **47.3K+** thành viên Group, **26K+** Fanpage, **20K+** Facebook cá nhân, **28.000+** ca thành công, **99.2%** tỷ lệ khôi phục.
 3. **Tiêu Chuẩn Năng Lực (Tech Standards Ticker)**:
    - Dải băng chuyền: Meta Verified, 26K Fanpage, 47.3K Thành viên Group, Hỗ trợ Online Toàn Quốc, No Data - No Charge, Thuật toán ghép video 4K/8K bản quyền.
@@ -81,7 +81,9 @@ Dự án Landing Page chính thức cho **Thành Phúc Data Recovery** - Dịch 
 ## 4. Hướng Dẫn Chạy Dự Án
 
 ### Khởi động môi trường phát triển:
+
 ```bash
 npm run dev
 ```
+
 Truy cập: `http://localhost:3000`

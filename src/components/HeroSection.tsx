@@ -71,7 +71,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
 
             {/* Subtitle Description */}
             <p className="text-base sm:text-lg text-slate-700 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-              Chuyên sâu xử lý: <strong className="text-slate-900 font-bold">Xóa nhầm • Lỗi thẻ bắt format (RAW) • Ghi đè file ảnh/video 📸🎦🔄</strong>. Cứu dữ liệu máy ảnh Sony, Canon, flycam DJI, ổ cứng HDD/SSD, USB và Google Drive. Khách hàng ngồi tại nhà giám sát trực tiếp 100% qua UltraViewer.
+              Chuyên sâu xử lý: <strong className="text-slate-900 font-bold">Xóa nhầm • Lỗi thẻ bắt format (RAW) • Ghi đè file ảnh/video</strong>. Cứu dữ liệu máy ảnh Sony, Canon, flycam DJI, ổ cứng HDD/SSD, USB và Google Drive. Khách hàng ngồi tại nhà giám sát trực tiếp 100% qua UltraViewer.
             </p>
 
             {/* Authority Links (Facebook, Fanpage & Admin Group) */}

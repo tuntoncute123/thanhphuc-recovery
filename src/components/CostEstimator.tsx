@@ -34,7 +34,7 @@ interface CostEstimatorProps {
 
 export const CostEstimator: React.FC<CostEstimatorProps> = ({ onRequestQuoteWithDetails }) => {
   const [selectedDeviceId, setSelectedDeviceId] = useState(COST_ESTIMATOR_DEVICES[0].id);
-  const [selectedAddonIds, setSelectedAddonIds] = useState<string[]>([COST_ESTIMATOR_ADDONS[0].id]);
+  const [selectedAddonIds, setSelectedAddonIds] = useState<string[]>([]);
   const [urgency, setUrgency] = useState<'standard' | 'emergency'>('standard');
 
   const selectedDevice = COST_ESTIMATOR_DEVICES.find((d) => d.id === selectedDeviceId) || COST_ESTIMATOR_DEVICES[0];

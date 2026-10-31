@@ -19,7 +19,7 @@ export const COMPANY_INFO = {
   city: 'Hồ Chí Minh',
   address: 'Thành phố Hồ Chí Minh (Hỗ trợ Online từ xa toàn quốc & Tiếp nhận trực tiếp)',
   social: {
-    facebookPersonal: 'https://www.facebook.com/ThanhphucRecover',
+    facebookPersonal: 'https://www.facebook.com/Khoiphucdulieuthenho',
     facebookPage: 'https://www.facebook.com/Khoiphucdulieuthenho/',
     facebookGroup: 'https://www.facebook.com/groups/khoiphucdulieuthe/',
     zalo: 'https://zalo.me/0935473890',
@@ -49,7 +49,7 @@ export const CORE_SERVICES: RecoveryServiceItem[] = [
   {
     id: 'service-memory-card',
     title: 'Cứu Dữ Liệu Thẻ Nhớ Máy Ảnh (SD, MicroSD, CF, CFexpress)',
-    category: 'Thẻ Nhớ Media & Camera 📸🎦',
+    category: 'Thẻ Nhớ Media & Camera',
     badge: 'Chuyên khoa sâu số 1',
     shortDesc: 'Xử lý triệt để thẻ nhớ máy ảnh bị xóa nhầm, format nhầm, lỗi thẻ đòi format (RAW) và đặc biệt là phục hồi file ảnh/video bị ghi đè.',
     description: 'Ứng dụng thuật toán ghép nối phân mảnh chuyên sâu (Fragmented Video Reconstructor) cho các file quay phim 4K, 8K Sony, Canon, Nikon, Lumix, Fujifilm, Flycam DJI, GoPro. Khôi phục nguyên vẹn 100% ảnh RAW và video không bị giật lag, mất tiếng.',
@@ -281,11 +281,11 @@ export const RECOVERY_PROCESS: RecoveryProcessStep[] = [
 export const COST_ESTIMATOR_DEVICES: RecoveryDeviceOption[] = [
   {
     id: 'dev-sd-camera',
-    name: 'Thẻ nhớ máy ảnh (SD, MicroSD, CF, CFexpress, Flycam) 📸🎦',
+    name: 'Thẻ nhớ máy ảnh (SD, MicroSD, CF, CFexpress, Flycam)',
     badge: 'Chuyên gia số 1',
     isPopular: true,
-    basePrice: 400000,
-    priceEstimate: 'Từ 400.000 đ',
+    basePrice: 300000,
+    priceEstimate: 'Từ 300.000 đ',
     unit: 'Cứu Online toàn quốc hoặc trực tiếp',
     suitable: 'Chuyên trị thẻ nhớ Sony, SanDisk, Lexar, Transcend bị xóa nhầm, format, đòi format hoặc ghi đè file ảnh/video.',
     timeEstimate: '30 phút - 2 giờ',
@@ -303,8 +303,8 @@ export const COST_ESTIMATOR_DEVICES: RecoveryDeviceOption[] = [
     name: 'Ổ cứng cơ HDD (PC, Laptop, Ổ di động gắn ngoài)',
     badge: 'Phổ biến nhất',
     isPopular: true,
-    basePrice: 600000,
-    priceEstimate: 'Từ 600.000 đ',
+    basePrice: 1000000,
+    priceEstimate: 'Từ 1.000.000 đ',
     unit: 'Trọn gói kiểm tra & xử lý',
     suitable: 'Phù hợp cho ổ cứng WD, Seagate, Toshiba, Hitachi bị xóa nhầm, ghost nhầm, bad sector, nhận chậm hoặc phát tiếng kêu.',
     timeEstimate: '2 - 12 giờ',
@@ -339,8 +339,8 @@ export const COST_ESTIMATOR_DEVICES: RecoveryDeviceOption[] = [
     id: 'dev-google-drive',
     name: 'Google Drive, OneDrive & Lưu Trữ Đám Mây',
     badge: 'Độc quyền Cloud',
-    basePrice: 500000,
-    priceEstimate: 'Từ 500.000 đ',
+    basePrice: 300000,
+    priceEstimate: 'Từ 300.000 đ',
     unit: 'Xử lý Online từ xa',
     suitable: 'Dành cho tài khoản Google Drive cá nhân hoặc Workspace bị xóa vĩnh viễn trong thùng rác hoặc lỗi đồng bộ.',
     timeEstimate: '1 - 4 giờ',
@@ -394,7 +394,7 @@ export const COST_ESTIMATOR_DEVICES: RecoveryDeviceOption[] = [
 export const COST_ESTIMATOR_ADDONS: RecoveryAddon[] = [
   {
     id: 'addon-overwritten',
-    label: 'Thuật toán tái ghép nối tệp tin bị ghi đè (Ảnh/Video 📸🎦)',
+    label: 'Thuật toán tái ghép nối tệp tin bị ghi đè (Ảnh/Video)',
     price: 300000,
     description: 'Chuyên trị thẻ nhớ hoặc ổ cứng đã bị quay/chụp đè lên dữ liệu cũ.'
   },
@@ -436,7 +436,7 @@ export const FEATURED_CASES: RecoveryCaseItem[] = [
     title: 'Cứu 128GB ảnh cưới & video 4K thẻ SD Sony bị format và chụp đè',
     client: 'Studio Ảnh Cưới Hoàng Gia (Đà Nẵng)',
     category: 'hdd',
-    categoryLabel: 'Thẻ Nhớ SD 📸',
+    categoryLabel: 'Thẻ Nhớ SD',
     device: 'Thẻ nhớ SD Sony Tough 128GB - Máy ảnh Sony A7 IV',
     summary: 'Thợ phụ lỡ tay format thẻ và bấm chụp đè khoảng 5GB ảnh mới. Thẻ chứa trọn bộ phóng sự cưới của khách VIP ngày thứ 7. Khách hàng liên hệ Thành Phúc Recovery lúc 21h đêm, chúng tôi kết nối Online qua UltraViewer, áp dụng thuật toán tái ghép nối phân mảnh video và cứu lại 100% video tiệc cưới cùng hơn 1.800 file ảnh RAW nguyên vẹn.',
     highlights: [
@@ -619,6 +619,6 @@ export const TECH_STANDARDS = [
   { name: 'Facebook 20K Follower', desc: 'Admin Thành Phúc trực tiếp hỗ trợ' },
   { name: 'Online Toàn Quốc 24/7', desc: 'Xử lý từ xa qua Ultraview lấy ngay' },
   { name: 'No Data - No Charge', desc: 'Không cứu được - Hoàn toàn không mất phí' },
-  { name: 'Chuyên Gia Thẻ Nhớ 📸🎦', desc: 'Thuật toán ghép video 4K/8K bản quyền' },
+  { name: 'Chuyên Gia Thẻ Nhớ', desc: 'Thuật toán ghép video 4K/8K bản quyền' },
   { name: 'Bảo Mật Trực Tiếp 100%', desc: 'Giám sát trực tiếp quá trình làm' },
 ];
