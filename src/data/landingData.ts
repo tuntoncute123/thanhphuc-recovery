@@ -19,7 +19,7 @@ export const COMPANY_INFO = {
   city: 'Hồ Chí Minh',
   address: 'Thành phố Hồ Chí Minh (Hỗ trợ Online từ xa toàn quốc & Tiếp nhận trực tiếp)',
   social: {
-    facebookPersonal: 'https://www.facebook.com/Khoiphucdulieuthenho',
+    facebookPersonal: 'https://www.facebook.com/ThanhphucRecover',
     facebookPage: 'https://www.facebook.com/Khoiphucdulieuthenho/',
     facebookGroup: 'https://www.facebook.com/groups/khoiphucdulieuthe/',
     zalo: 'https://zalo.me/0935473890',

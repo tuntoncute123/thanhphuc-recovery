@@ -22,6 +22,7 @@ import {
   COST_ESTIMATOR_DEVICES, 
   COST_ESTIMATOR_ADDONS 
 } from '../data/landingData';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 interface CostEstimatorProps {
   onRequestQuoteWithDetails: (details: {
@@ -124,14 +125,21 @@ export const CostEstimator: React.FC<CostEstimatorProps> = ({ onRequestQuoteWith
             <span>CÔNG CỤ BÁO GIÁ MINH BẠCH</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
             Dự Toán Chi Phí Cứu Dữ Liệu{' '}
-            <span className="tech-gradient-text">Tức Thì (30 Giây)</span>
+            <HandDrawnMarker
+              variant="wobbly1"
+              color="text-sky-600"
+              textColor="text-white"
+              className="mt-1 sm:mt-0"
+            >
+              Tức Thì (30 Giây)
+            </HandDrawnMarker>
           </h2>
 
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Chọn thiết bị và tình trạng hỏng hóc để tính toán khoảng ngân sách và thời gian xử lý dự kiến. 
-            <strong className="text-slate-900"> Luôn miễn phí kiểm tra 100% tại chỗ.</strong>
+            Chọn thiết bị và tình trạng hỏng hóc để tính toán chi phí minh bạch.{' '}
+            <ChunkHighlight color="emerald">Luôn miễn phí kiểm tra 100%</ChunkHighlight> trực tiếp hoặc Online toàn quốc.
           </p>
         </div>
 

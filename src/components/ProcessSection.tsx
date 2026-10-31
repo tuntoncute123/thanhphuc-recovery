@@ -11,6 +11,7 @@ import {
   Clock
 } from 'lucide-react';
 import { RECOVERY_PROCESS } from '../data/landingData';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 export const ProcessSection: React.FC = () => {
   const getStepIcon = (iconName: string) => {
@@ -41,14 +42,21 @@ export const ProcessSection: React.FC = () => {
             <span>QUY TRÌNH CHUẨN QUỐC TẾ</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
             Quy Trình Cứu Dữ Liệu 5 Bước{' '}
-            <span className="tech-gradient-text">Minh Bạch &amp; Nghiêm Ngặt</span>
+            <HandDrawnMarker
+              variant="brushStroke"
+              color="text-sky-600"
+              textColor="text-white"
+              className="mt-1 sm:mt-0"
+            >
+              Minh Bạch &amp; Nghiêm Ngặt
+            </HandDrawnMarker>
           </h2>
 
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Khách hàng luôn nắm rõ tiến độ qua từng bước. Chúng tôi tuân thủ triệt để nguyên tắc: 
-            <strong className="text-slate-900"> &quot;Không cứu được dữ liệu - Hoàn toàn không mất phí&quot;</strong>.
+            Khách hàng luôn theo dõi trực tiếp tiến độ qua UltraViewer. Cam kết chuẩn mực:{' '}
+            <ChunkHighlight color="emerald">&quot;Không cứu được dữ liệu - Hoàn toàn không mất phí&quot;</ChunkHighlight>.
           </p>
         </div>
 

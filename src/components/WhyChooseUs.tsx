@@ -12,6 +12,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 import { WHY_CHOOSE_US } from '../data/landingData';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 export const WhyChooseUs: React.FC = () => {
   const getFeatureIcon = (iconName: string) => {
@@ -44,13 +45,22 @@ export const WhyChooseUs: React.FC = () => {
             <span>NĂNG LỰC PHÒNG LAB VÀ CAM KẾT VÀNG</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Vì Sao Hơn 47.300+ Thành Viên &amp; Khách Hàng Chọn{' '}
-            <span className="tech-gradient-text">Thành Phúc Data Recovery</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
+            Vì Sao Hơn 47.300+ Khách Hàng Chọn{' '}
+            <HandDrawnMarker
+              variant="heroTop"
+              color="text-sky-600"
+              textColor="text-white"
+              className="mt-1 sm:mt-0"
+            >
+              Thành Phúc Data Recovery
+            </HandDrawnMarker>
           </h2>
 
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Dịch vụ Meta đã xác minh chính chủ. Uy tín 12+ năm được khẳng định bởi hơn 26.000 Follower Fanpage, 20.000 Follower trang cá nhân và Group cứu dữ liệu 47.300 thành viên đông đảo nhất mạng xã hội.
+            <ChunkHighlight color="blue">Dịch vụ Meta đã xác minh (Tích xanh)</ChunkHighlight>. Uy tín 12+ năm được khẳng định bởi hơn{' '}
+            <strong className="text-slate-900 font-bold">26.000 Follower Fanpage</strong> và{' '}
+            <ChunkHighlight color="amber">Group 47.300 thành viên</ChunkHighlight> lớn nhất mạng xã hội.
           </p>
         </div>
 

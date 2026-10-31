@@ -14,6 +14,7 @@ import {
   Check
 } from 'lucide-react';
 import { INDUSTRY_SOLUTIONS } from '../data/landingData';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 interface SolutionsSectionProps {
   onSelectSolution: (solutionTitle: string) => void;
@@ -50,13 +51,22 @@ export const SolutionsSection: React.FC<SolutionsSectionProps> = ({ onSelectSolu
             <span>GIẢI PHÁP CHUYÊN BIỆT THEO ĐẶC THÙ NGÀNH</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-            Quy Trình Cứu Dữ Liệu Được Tối Ưu Cho{' '}
-            <span className="tech-gradient-text">Từng Đối Tượng Khách Hàng</span>
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
+            Quy Trình Cứu Dữ Liệu Tối Ưu Cho{' '}
+            <HandDrawnMarker
+              variant="heroBottom"
+              color="text-sky-600"
+              textColor="text-white"
+              className="mt-1 sm:mt-0"
+            >
+              Từng Khách Hàng
+            </HandDrawnMarker>
           </h2>
 
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Mỗi lĩnh vực đòi hỏi mức độ bảo mật và tính cấp bách khác nhau. Chúng tôi xây dựng quy trình chuyên biệt đáp ứng tiêu chuẩn khắt khe nhất của từng ngành.
+            Phục vụ chuyên sâu cho <ChunkHighlight color="blue">Nhiếp ảnh &amp; Ekip Media</ChunkHighlight>, hỗ trợ{' '}
+            <ChunkHighlight color="emerald">Online từ xa toàn quốc</ChunkHighlight> và các giải pháp bảo mật dữ liệu cho{' '}
+            <strong className="text-slate-900 font-bold">Doanh nghiệp &amp; Cá nhân</strong>.
           </p>
         </div>
 

@@ -229,7 +229,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                 href={COMPANY_INFO.social.zalo}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg bg-sky-600 text-white text-xs font-bold whitespace-nowrap shrink-0"
+                style={{ backgroundColor: '#0284c7', color: '#ffffff' }}
+                className="flex items-center space-x-1.5 px-3 py-1.5 rounded-lg !bg-sky-600 !text-white text-xs font-bold whitespace-nowrap shrink-0"
                 title="Mở Zalo.me 0935.473.890"
               >
                 <Phone className="w-3.5 h-3.5 shrink-0" />
@@ -345,7 +346,8 @@ export const Navbar: React.FC<NavbarProps> = ({
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center space-x-2 rounded-xl font-bold bg-sky-600 hover:bg-sky-700 text-white h-11 border-0 shadow-sm"
+              style={{ backgroundColor: '#0284c7', color: '#ffffff' }}
+              className="w-full flex items-center justify-center space-x-2 rounded-xl font-bold !bg-sky-600 hover:!bg-sky-700 !text-white h-11 border-0 shadow-sm"
               title="Nhắn tin Zalo Thành Phúc Recover"
             >
               <span>Nhắn Tin Zalo.me Ngay</span>

@@ -43,45 +43,58 @@ export const HandDrawnMarker: React.FC<HandDrawnMarkerProps> = ({
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
-    if (!('IntersectionObserver' in window)) {
-      setIsRevealed(true);
-      return;
-    }
+    let observer: IntersectionObserver | null = null;
+    const rafId = requestAnimationFrame(() => {
+      if (!('IntersectionObserver' in window)) {
+        setIsRevealed(true);
+        return;
+      }
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsRevealed(true);
-          }
-        });
-      },
-      { threshold: 0.1, rootMargin: '60px' }
-    );
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setIsRevealed(true);
+            }
+          });
+        },
+        { threshold: 0.1, rootMargin: '60px' }
+      );
 
-    if (containerRef.current) {
-      observer.observe(containerRef.current);
-    }
+      if (containerRef.current) {
+        observer.observe(containerRef.current);
+      }
+    });
 
-    return () => observer.disconnect();
+    return () => {
+      cancelAnimationFrame(rafId);
+      if (observer) {
+        observer.disconnect();
+      }
+    };
   }, []);
 
   return (
     <span
       ref={containerRef}
+      suppressHydrationWarning
       className={`relative inline-flex items-center justify-center whitespace-nowrap px-3 sm:px-5 py-1 sm:py-2 leading-tight ${className}`}
       style={{
         borderRadius: '255px 15px 225px 15px / 15px 225px 15px 255px',
       }}
     >
       {/* 1. Base Layer */}
-      <span className={`relative z-0 ${baseTextColor} font-black inline-flex items-center justify-center whitespace-nowrap leading-none`}>
+      <span
+        suppressHydrationWarning
+        className={`relative z-0 ${baseTextColor} font-black inline-flex items-center justify-center whitespace-nowrap leading-none`}
+      >
         {children}
       </span>
 
       {/* 2. Revealing Layer */}
       <span
         aria-hidden="true"
+        suppressHydrationWarning
         className="absolute -inset-x-1.5 sm:-inset-x-2.5 -inset-y-1 sm:-inset-y-1.5 flex items-center justify-center pointer-events-none z-10 select-none"
         style={{
           clipPath: isRevealed ? 'inset(0 0% 0 0)' : 'inset(0 100% 0 0)',
@@ -99,7 +112,10 @@ export const HandDrawnMarker: React.FC<HandDrawnMarkerProps> = ({
           </svg>
         </span>
 
-        <span className={`relative z-10 ${textColor} font-black inline-flex items-center justify-center whitespace-nowrap leading-none`}>
+        <span
+          suppressHydrationWarning
+          className={`relative z-10 ${textColor} font-black inline-flex items-center justify-center whitespace-nowrap leading-none`}
+        >
           {children}
         </span>
       </span>
@@ -120,7 +136,10 @@ export const ChunkHighlight: React.FC<{
   };
 
   return (
-    <span className={`inline-block px-1.5 py-0.5 rounded border-b-2 font-bold ${colorMap[color]} ${className}`}>
+    <span
+      suppressHydrationWarning
+      className={`inline-block px-1.5 py-0.5 rounded border-b-2 font-bold ${colorMap[color]} ${className}`}
+    >
       {children}
     </span>
   );

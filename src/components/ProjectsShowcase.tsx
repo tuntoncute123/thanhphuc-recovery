@@ -14,6 +14,7 @@ import {
   Activity
 } from 'lucide-react';
 import { FEATURED_CASES } from '../data/landingData';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 interface ProjectsShowcaseProps {
   onSelectProjectInquiry: (projectName: string) => void;
@@ -60,13 +61,23 @@ export const ProjectsShowcase: React.FC<ProjectsShowcaseProps> = ({ onSelectProj
             <span>KẾT QUẢ THỰC TẾ ĐÃ ĐƯỢC CHỨNG THỰC</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
             Những Ca Cứu Dữ Liệu{' '}
-            <span className="tech-gradient-text">Tiêu Biểu Tại Phòng Lab</span>
+            <HandDrawnMarker
+              variant="wobbly1"
+              color="text-sky-600"
+              textColor="text-white"
+              className="mt-1 sm:mt-0"
+            >
+              Tiêu Biểu Tại Phòng Lab
+            </HandDrawnMarker>
           </h2>
 
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Hàng ngàn doanh nghiệp và cá nhân đã lấy lại trọn vẹn tài sản số quý giá nhờ chuyên môn kỹ thuật sâu và trang thiết bị hiện đại tại T&amp;T Data Recovery.
+            Hàng ngàn doanh nghiệp và cá nhân đã lấy lại trọn vẹn{' '}
+            <ChunkHighlight color="blue">tài sản số quý giá</ChunkHighlight> nhờ{' '}
+            <strong className="text-slate-900 font-bold">chuyên môn kỹ thuật sâu</strong> và trang thiết bị hiện đại tại{' '}
+            <ChunkHighlight color="cyan">Thành Phúc Data Recovery</ChunkHighlight>.
           </p>
         </div>
 

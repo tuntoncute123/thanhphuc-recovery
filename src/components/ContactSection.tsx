@@ -17,6 +17,7 @@ import {
   Monitor
 } from 'lucide-react';
 import { COMPANY_INFO } from '../data/landingData';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 const { Option } = Select;
 const { TextArea } = Input;
@@ -91,45 +92,62 @@ export const ContactSection: React.FC = () => {
                 <span>META ĐÃ XÁC MINH • HỖ TRỢ ONLINE TOÀN QUỐC</span>
               </div>
 
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
-                Liên Hệ Với{' '}
-                <span className="tech-gradient-text">Anh Thành Phúc</span>
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
+                Liên Hệ Trực Tiếp{' '}
+                <HandDrawnMarker
+                  variant="wobbly1"
+                  color="text-sky-600"
+                  textColor="text-white"
+                  className="mt-1 sm:mt-0"
+                >
+                  Anh Thành Phúc
+                </HandDrawnMarker>
               </h2>
 
               <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
-                Nếu thẻ nhớ hay ổ cứng của bạn vừa gặp sự cố (xóa nhầm, format, không nhận), hãy rút thiết bị ra ngay và nhắn tin hoặc gọi điện cho anh Phúc để được hỗ trợ kiểm tra Online từ xa lấy file nhanh nhất!
+                Nếu thẻ nhớ hay ổ cứng vừa gặp sự cố, hãy <ChunkHighlight color="amber">rút thiết bị ra ngay</ChunkHighlight> và liên hệ để được{' '}
+                <ChunkHighlight color="emerald">kiểm tra Online từ xa miễn phí 100%</ChunkHighlight> lấy file cấp tốc!
               </p>
             </div>
 
             {/* Hotline Call Box */}
-            <div className="p-5 rounded-2xl bg-gradient-to-r from-sky-600 to-cyan-600 text-white shadow-xl shadow-sky-500/20 space-y-3">
-              <div className="flex items-center justify-between text-xs font-bold text-sky-100 uppercase tracking-wider">
-                <span>Zalo.me &amp; Hotline Trực Tiếp 24/7</span>
-                <span className="px-2 py-0.5 rounded-full bg-white/20 text-white font-mono text-[11px]">
+            <div className="p-5 sm:p-6 rounded-2xl bg-gradient-to-r from-sky-600 via-sky-500 to-cyan-600 text-white shadow-xl shadow-sky-500/25 space-y-3 relative overflow-hidden">
+              <div className="flex items-center justify-between text-xs font-bold uppercase tracking-wider">
+                <span className="flex items-center space-x-1.5 text-white">
+                  <Phone className="w-4 h-4 text-white animate-pulse" />
+                  <span>Zalo.me &amp; Hotline Trực Tiếp 24/7</span>
+                </span>
+                <span className="px-2.5 py-0.5 rounded-full bg-white/25 text-white font-mono text-[11px] font-bold backdrop-blur-xs">
                   Cứu Gấp Trong Đêm
                 </span>
               </div>
-              <a
-                href={COMPANY_INFO.social.zalo}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-2xl sm:text-3xl font-black text-white block hover:underline tracking-tight"
-                title="Mở Zalo.me chat trực tiếp: 0935.473.890"
-              >
-                {COMPANY_INFO.hotlineDisplay}
-              </a>
-              <div className="flex items-center justify-between pt-1 text-xs">
-                <span className="text-sky-100 font-medium">
+              <div className="py-1">
+                <a
+                  href={COMPANY_INFO.social.zalo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{ color: '#ffffff' }}
+                  className="text-3xl sm:text-4xl font-black !text-white block hover:opacity-90 tracking-tight transition-opacity drop-shadow-sm"
+                  title="Mở Zalo.me chat trực tiếp: 0935.473.890"
+                >
+                  <span style={{ color: '#ffffff' }} className="!text-white font-black">
+                    {COMPANY_INFO.hotlineDisplay}
+                  </span>
+                </a>
+              </div>
+              <div className="flex items-center justify-between pt-2 border-t border-white/20 text-xs">
+                <span className="text-white font-medium">
                   Anh Phúc trực tiếp hỗ trợ 24/7.
                 </span>
                 <a
                   href={COMPANY_INFO.social.zalo}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center space-x-1 px-3 py-1 rounded-lg bg-white text-sky-700 font-bold hover:bg-sky-50 transition-colors shadow-2xs"
+                  style={{ backgroundColor: '#ffffff', color: '#0369a1' }}
+                  className="inline-flex items-center space-x-1 px-3.5 py-1.5 rounded-xl !bg-white !text-sky-700 font-bold hover:!bg-sky-50 transition-colors shadow-sm cursor-pointer"
                 >
-                  <span>Mở Zalo.me</span>
-                  <ExternalLink className="w-3 h-3 ml-0.5" />
+                  <span style={{ color: '#0369a1' }} className="!text-sky-700 font-bold">Mở Zalo.me</span>
+                  <ExternalLink className="w-3.5 h-3.5 ml-0.5 text-sky-700" />
                 </a>
               </div>
             </div>
@@ -171,7 +189,7 @@ export const ContactSection: React.FC = () => {
                   </div>
                   <div>
                     <span className="text-xs font-bold block">Facebook Cá Nhân (20K Người Theo Dõi):</span>
-                    <span className="text-xs text-blue-700 font-medium">www.facebook.com/ThanhphucRecover</span>
+                    <span className="text-xs text-blue-700 font-medium">facebook.com/ThanhphucRecover</span>
                   </div>
                 </div>
                 <ExternalLink className="w-4 h-4 text-blue-500 group-hover:translate-x-0.5 transition-transform" />

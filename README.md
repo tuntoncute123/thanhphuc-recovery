@@ -13,7 +13,7 @@ Dự án Landing Page chính thức cho **Thành Phúc Data Recovery** - Dịch 
 - **Dịch vụ Meta**: Đã xác minh (Tích xanh uy tín)
 - **Hệ sinh thái mạng xã hội**:
   - 📸 Fanpage: [www.facebook.com/Khoiphucdulieuthenho/](https://www.facebook.com/Khoiphucdulieuthenho/) (26K Người theo dõi • Tích xanh Meta)
-  - 🔴 Facebook cá nhân: [www.facebook.com/ThanhphucRecover](https://www.facebook.com/Khoiphucdulieuthenho) (20K Người theo dõi)
+  - 🔴 Facebook cá nhân: [www.facebook.com/ThanhphucRecover](https://www.facebook.com/ThanhphucRecover) (20K Người theo dõi)
   - 👥 Admin Group KPDL: [www.facebook.com/groups/khoiphucdulieuthe/](https://www.facebook.com/groups/khoiphucdulieuthe/) (47.3K Thành viên)
 
 ---

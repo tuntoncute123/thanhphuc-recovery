@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import { CORE_SERVICES } from '../data/landingData';
 import { RecoveryServiceItem } from '../types/landing';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 interface ServicesSectionProps {
   onSelectService: (serviceName: string) => void;
@@ -55,13 +56,22 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onSelectServic
             <span>DỊCH VỤ CỨU HỘ CHUYÊN SÂU</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
             Giải Pháp Khôi Phục Dữ Liệu{' '}
-            <span className="tech-gradient-text">Toàn Diện &amp; Bảo Mật</span>
+            <HandDrawnMarker
+              variant="wobbly2"
+              color="text-sky-600"
+              textColor="text-white"
+              className="mt-1 sm:mt-0"
+            >
+              Toàn Diện &amp; Bảo Mật
+            </HandDrawnMarker>
           </h2>
 
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Trang bị đồng bộ thiết bị công nghệ phòng sạch Cleanroom Class 100 và trạm máy PC-3000 chính hãng ACE Lab, chúng tôi xử lý thành công mọi ca hỏng hóc từ đơn giản đến phức tạp nhất.
+            Trang bị đồng bộ thiết bị <strong className="text-slate-900 font-bold">phòng sạch Cleanroom</strong> và trạm máy{' '}
+            <ChunkHighlight color="blue">PC-3000 chính hãng ACE Lab</ChunkHighlight>, chúng tôi cam kết{' '}
+            <ChunkHighlight color="emerald">không cứu được dữ liệu - hoàn toàn không mất phí</ChunkHighlight>.
           </p>
         </div>
 

@@ -10,6 +10,7 @@ import {
   Quote
 } from 'lucide-react';
 import { TESTIMONIALS_DATA, FAQ_DATA } from '../data/landingData';
+import { HandDrawnMarker, ChunkHighlight } from './HandDrawnMarker';
 
 export const TestimonialsSection: React.FC = () => {
   const faqItems = FAQ_DATA.map((item, index) => ({
@@ -37,13 +38,21 @@ export const TestimonialsSection: React.FC = () => {
             <span>ĐÁNH GIÁ THỰC TẾ &amp; GIẢI ĐÁP</span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 tracking-tight leading-snug sm:leading-tight">
             Niềm Tin Từ Khách Hàng &amp;{' '}
-            <span className="tech-gradient-text">Câu Hỏi Thường Gặp</span>
+            <HandDrawnMarker
+              variant="wobbly2"
+              color="text-sky-600"
+              textColor="text-white"
+              className="mt-1 sm:mt-0"
+            >
+              Đánh Giá Thực Tế
+            </HandDrawnMarker>
           </h2>
 
           <p className="mt-3.5 text-base sm:text-lg text-slate-600 leading-relaxed font-normal">
-            Lắng nghe trải nghiệm trực tiếp từ các doanh nghiệp và chuyên gia đã đồng hành cùng T&amp;T Data Recovery trong những giây phút cấp bách nhất.
+            Lắng nghe trải nghiệm trực tiếp từ các doanh nghiệp và chuyên gia đã đồng hành cùng{' '}
+            <ChunkHighlight color="blue">Thành Phúc Data Recovery</ChunkHighlight> trong những giây phút cấp bách nhất.
           </p>
         </div>
 

@@ -48,10 +48,11 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
           href={COMPANY_INFO.social.facebookPersonal}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 h-12 rounded-full bg-blue-600 hover:bg-blue-700 text-white flex items-center justify-center shadow-lg shadow-blue-600/30 transition-transform hover:scale-110 cursor-pointer group relative"
+          style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+          className="w-12 h-12 rounded-full !bg-blue-600 hover:!bg-blue-700 !text-white flex items-center justify-center shadow-lg shadow-blue-600/30 transition-transform hover:scale-110 cursor-pointer group relative"
           aria-label="Facebook Thành Phúc"
         >
-          <span className="font-bold text-base">f</span>
+          <span style={{ color: '#ffffff' }} className="font-bold text-base !text-white">f</span>
           <span className="absolute right-14 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md pointer-events-none">
             Facebook: ThanhphucRecover
           </span>
@@ -62,10 +63,11 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
           href={COMPANY_INFO.social.zalo}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 h-12 rounded-full bg-[#0068FF] hover:bg-blue-600 text-white flex items-center justify-center shadow-lg shadow-blue-500/30 transition-transform hover:scale-110 cursor-pointer group relative"
+          style={{ backgroundColor: '#0068FF', color: '#ffffff' }}
+          className="w-12 h-12 rounded-full !bg-[#0068FF] hover:!bg-blue-600 !text-white flex items-center justify-center shadow-lg shadow-blue-500/30 transition-transform hover:scale-110 cursor-pointer group relative"
           aria-label="Chat Zalo"
         >
-          <MessageCircle className="w-6 h-6" />
+          <MessageCircle className="w-6 h-6 text-white" />
           <span className="absolute right-14 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md pointer-events-none">
             Chat Zalo: 0935.473.890
           </span>
@@ -74,10 +76,11 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
         {/* Quick Estimator Button */}
         <button
           onClick={onScrollToEstimator}
-          className="w-12 h-12 rounded-full bg-amber-500 hover:bg-amber-600 text-white flex items-center justify-center shadow-lg shadow-amber-500/30 transition-transform hover:scale-110 cursor-pointer group relative"
+          style={{ backgroundColor: '#f59e0b', color: '#ffffff' }}
+          className="w-12 h-12 rounded-full !bg-amber-500 hover:!bg-amber-600 !text-white flex items-center justify-center shadow-lg shadow-amber-500/30 transition-transform hover:scale-110 cursor-pointer group relative"
           aria-label="Dự toán chi phí"
         >
-          <Calculator className="w-5 h-5" />
+          <Calculator className="w-5 h-5 text-white" />
           <span className="absolute right-14 bg-slate-900 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md pointer-events-none">
             Dự Toán Chi Phí (30s)
           </span>
@@ -88,10 +91,11 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
           href={COMPANY_INFO.social.zalo}
           target="_blank"
           rel="noopener noreferrer"
-          className="w-12 h-12 rounded-full bg-sky-600 hover:bg-sky-700 text-white flex items-center justify-center shadow-lg shadow-sky-500/35 transition-transform hover:scale-110 cursor-pointer group relative animate-pulse"
+          style={{ backgroundColor: '#0284c7', color: '#ffffff' }}
+          className="w-12 h-12 rounded-full !bg-sky-600 hover:!bg-sky-700 !text-white flex items-center justify-center shadow-lg shadow-sky-500/35 transition-transform hover:scale-110 cursor-pointer group relative animate-pulse"
           aria-label="Hotline Zalo cấp cứu"
         >
-          <Phone className="w-5 h-5" />
+          <Phone className="w-5 h-5 text-white" />
           <span className="absolute right-14 bg-sky-600 text-white text-xs font-bold px-3 py-1.5 rounded-xl whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity shadow-md pointer-events-none">
             Zalo.me: 0935.473.890
           </span>
@@ -115,7 +119,8 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
           href={COMPANY_INFO.social.zalo}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center space-x-1.5 py-2.5 rounded-xl bg-slate-900 text-white text-xs font-bold"
+          style={{ backgroundColor: '#0f172a', color: '#ffffff' }}
+          className="flex-1 flex items-center justify-center space-x-1.5 py-2.5 rounded-xl !bg-slate-900 !text-white text-xs font-bold"
         >
           <Phone className="w-4 h-4 text-sky-400" />
           <span>Hotline: {COMPANY_INFO.hotlineDisplay}</span>
@@ -125,17 +130,19 @@ export const FloatingSideCTA: React.FC<FloatingSideCTAProps> = ({
           href={COMPANY_INFO.social.zalo}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center space-x-1.5 py-2.5 rounded-xl bg-blue-600 text-white text-xs font-bold shadow-md shadow-blue-500/20"
+          style={{ backgroundColor: '#2563eb', color: '#ffffff' }}
+          className="flex-1 flex items-center justify-center space-x-1.5 py-2.5 rounded-xl !bg-blue-600 !text-white text-xs font-bold shadow-md shadow-blue-500/20"
         >
-          <MessageCircle className="w-4 h-4" />
+          <MessageCircle className="w-4 h-4 text-white" />
           <span>Chat Zalo</span>
         </a>
 
         <button
           onClick={onOpenConsultation}
-          className="flex-1 flex items-center justify-center space-x-1 py-2.5 rounded-xl bg-sky-600 text-white text-xs font-bold shadow-md shadow-sky-500/20"
+          style={{ backgroundColor: '#0284c7', color: '#ffffff' }}
+          className="flex-1 flex items-center justify-center space-x-1 py-2.5 rounded-xl !bg-sky-600 !text-white text-xs font-bold shadow-md shadow-sky-500/20"
         >
-          <Globe className="w-3.5 h-3.5" />
+          <Globe className="w-3.5 h-3.5 text-white" />
           <span>Cứu Online</span>
         </button>
       </div>
